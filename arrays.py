@@ -52,7 +52,21 @@ def twoSum2(arr, target):
             complementMap[complement] = i 
 
 print(twoSum2([1,2,3,6,7],3))
-        
-#Maximum Subarray
+
+#Max Subarray
+def maxSubArray(self, nums: List[int]) -> int:   
+    if len(nums) == 0:
+        return 0
+    res = nums[0]
+    currMax = 0
+    for n in nums:
+        if currMax + n < 0:
+        currMax = 0
+        res = max(n, res)
+        else:
+        currMax += n
+        res = max(currMax, res)
+    return res
+            
 
 
