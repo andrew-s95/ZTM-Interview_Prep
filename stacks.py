@@ -76,5 +76,9 @@ class Stack:
     self.length -= 1
     return popped_item
 
+mystack = Stack()
+mystack.push("mic")
+print(mystack)
+
   
 

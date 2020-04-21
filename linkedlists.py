@@ -1,11 +1,11 @@
 #Create SLL
 
-class Node():
+class Node:
   def __init__(self, val):
     self.next = None
     self.val = val
 
-class LinkedList():
+class LinkedList:
   def __init__(self):
     self.head = None
     self.tail = None
@@ -87,6 +87,8 @@ class LinkedList():
       temp.next = prev
       prev = temp
     self.head = temp 
+
+
 
 
 
